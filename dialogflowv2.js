@@ -43,7 +43,7 @@ module.exports = function(RED) {
       });
 
 
-      var sessionPath = sessionClient.sessionPath(projectId, String(msg._msgid));
+      var sessionPath = sessionClient.sessionPath(projectId, 'session001');
       var request = {
         session: sessionPath,
         queryInput: {
